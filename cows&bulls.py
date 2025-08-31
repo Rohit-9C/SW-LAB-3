@@ -1,4 +1,5 @@
 import random
+#generate number 
 
 def generate_number():
     # Generate a random 4-digit number as a string
@@ -45,3 +46,4 @@ def play_game():
 # Run the game
 if __name__ == "__main__":
     play_game()
+
