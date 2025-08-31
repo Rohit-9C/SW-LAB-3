@@ -21,29 +21,3 @@ def cows_and_bulls(secret, guess):
     
     return cows, bulls
 
-def play_game():
-    print("Welcome to the Cows and Bulls Game!")
-    secret_number = generate_number()
-    attempts = 0
-    
-    while True:
-        guess = input("Enter a 4-digit number: ")
-        
-        # Check valid input
-        if not guess.isdigit() or len(guess) != 4:
-            print("Please enter a valid 4-digit number.")
-            continue
-        
-        attempts += 1
-        cows, bulls = cows_and_bulls(secret_number, guess)
-        
-        print(f"{cows} cows, {bulls} bulls")
-        
-        if cows == 4:
-            print(f"🎉 Congratulations! You guessed the number {secret_number} in {attempts} attempts.")
-            break
-
-# Run the game
-if __name__ == "__main__":
-    play_game()
-
