@@ -43,6 +43,7 @@ def play_game():
             print(f"🎉 Congratulations! You guessed the number {secret_number} in {attempts} attempts.")
             break
 
-# Run the game
+# Run the game #
 if _name_ == "_main_":
     play_game()
+
